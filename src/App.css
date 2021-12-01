@@ -1,14 +1,45 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
+:root {
+    --primary: orange;
+    --primary-dark: rgba(255, 255, 255, 0)
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .logo {
-    width: 2.75rem;
+    width: 4.25rem;
 }
 nav a.nav-link {
-    font-weight: 500;
-    letter-spacing: 0.0375rem;
-    cursor: pointer;
+  font-weight: 500;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  letter-spacing: 0.0375rem;
+  border-bottom: 0.1875rem solid var(--primary-dark);
+  cursor: pointer;
 }
 nav ul li {
-    text-transform: uppercase!important;
+    text-transform: uppercase;
+}
+.navbar-nav > li > a {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+    color: #fff!important;
+    border-top: 0.1875rem solid var(--primary-dark);
+}
+.navbar-toggler {
+    border: 0;
+    color: var(--primary-dark)!important
+}
+.navbar-brand {
+    max-width: 17.25rem;
+    padding: 0!important;
+    height: 3rem!important
+}
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+    border-top: 0.1875rem solid var(--primary)
+}
+.navbar-nav > li > a:hover {
+    border-top: 0.1875rem solid var(--primary)
+
 }
